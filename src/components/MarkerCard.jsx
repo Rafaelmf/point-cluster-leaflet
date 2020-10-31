@@ -11,7 +11,7 @@ const { Meta } = Card;
 const MarkerCard = () => {
   return (
     <Card
-      style={{ width: 250 }}
+      style={{ width: '100%' }}
       cover={
         <img
           alt="example"
