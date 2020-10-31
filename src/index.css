@@ -13,13 +13,28 @@ body, html {
 .App {
   background: #f0f2f5;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.ant-layout-header {
+  height: 100px !important;
+}
+
+.ant-menu-horizontal {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  font-size: 90px;
+}
+
+.ant-menu-horizontal > * {
+  font-size: large;
 }
 
 .app-footer {
@@ -29,8 +44,36 @@ code {
 }
 
 .site-layout-content {
-  margin: 64px;
-  padding: 32px;
+  margin: 32px;
   min-height: 100%;
+}
+
+.markercluster-map { height: 70vh; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-height: 670px;
+  overflow-y: auto;
+}
+
+.search-bar {
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 30px;
+  grid-column: 1 / span 2;
+  background-color: white;
+}
+
+.ant-form-inline {
+  align-items: center !important;
+}
+
+.map-and-card-container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   background-color: white;
 }
