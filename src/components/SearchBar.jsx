@@ -16,7 +16,7 @@ const SearchBar = () => {
         type="primary"
         icon={<SearchOutlined />}
       >
-        Buscar
+        Buscar Imóveis
       </Button>
       <div className="search-bar-form">
         <Form.Item label="Código ou Endereço">

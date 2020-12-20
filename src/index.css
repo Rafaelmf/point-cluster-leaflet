@@ -14,7 +14,7 @@ body, html {
   background: #f0f2f5;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr auto 0.3fr;
+  grid-template-rows: 100px auto 55px;
 }
 
 code {
@@ -29,9 +29,15 @@ code {
 
 .header-grid {
   display: grid;
-  grid-template-columns: 1fr 15fr 1fr;
+  grid-template-columns: 1fr 15fr 1.2fr;
   align-items: center;
   height: 100%;
+}
+
+.avatar-div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .ant-menu-horizontal {
@@ -111,3 +117,39 @@ code {
   max-height: 74px;
   overflow-y: auto;
 }
+
+
+
+
+
+/* CONTACT */
+.contact-form {
+  padding: 30px 200px;
+  height: 100%;
+  background-color: white;
+}
+
+
+
+
+/* ADD IMOVEL */
+
+.form-register-location {
+  margin-bottom: 20px;
+  padding: 30px;
+  height: 100%;
+  background-color: white;
+}
+
+.add-location-address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.add-location-map {
+  height: 300px;
+  width: 100%;
+}
+
+
